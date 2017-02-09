@@ -4,8 +4,7 @@
   "description": "standalone ReactCSSTransitionGroup implement",
   "main": "lib/index.js",
   "scripts": {
-    "build": "babel src -d lib",
-    "prepublish": "build"
+    "build": "babel src -d lib"
   },
   "repository": {
     "type": "git",
