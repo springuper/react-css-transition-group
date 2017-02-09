@@ -1,0 +1,31 @@
+{
+  "name": "standalone-react-css-transition-group",
+  "version": "0.1.0",
+  "description": "standalone ReactCSSTransitionGroup implement",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "babel src -d lib",
+    "prepublish": "build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/springuper/react-css-transition-group.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/springuper/react-css-transition-group/issues"
+  },
+  "homepage": "https://github.com/springuper/react-css-transition-group#readme",
+  "peerDependencies": {
+    "fbjs": "^0.8.9",
+    "react": "^15.4.2"
+  },
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-cli": "^6.22.2",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-react": "^6.22.0",
+    "babel-preset-stage-0": "^6.22.0"
+  }
+}

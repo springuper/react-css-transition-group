@@ -1,0 +1,22 @@
+{
+  "name": "react-css-transition-group",
+  "version": "0.1.0",
+  "description": "ReactCSSTransitionGroup",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/springuper/react-css-transition-group.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/springuper/react-css-transition-group/issues"
+  },
+  "homepage": "https://github.com/springuper/react-css-transition-group#readme",
+  "peerDependencies": {
+    "react": "^15.4.2"
+  }
+}
