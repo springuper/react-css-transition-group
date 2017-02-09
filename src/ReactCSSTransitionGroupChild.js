@@ -52,7 +52,7 @@ var ReactCSSTransitionGroupChild = React.createClass({
   },
 
   transition: function(animationType, finishCallback, userSpecifiedDelay) {
-    var node = ReactAddonsDOMDependencies.getReactDOM().findDOMNode(this);
+    var node = ReactDOM.findDOMNode(this);
 
     if (!node) {
       if (finishCallback) {
