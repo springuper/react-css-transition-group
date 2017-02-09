@@ -14,8 +14,6 @@
 var React = require('react');
 var ReactTransitionChildMapping = require('./ReactTransitionChildMapping');
 
-var emptyFunction = require('fbjs/lib/emptyFunction');
-
 /**
  * A basis for animations. When children are declaratively added or removed,
  * special lifecycle hooks are called.
@@ -31,7 +29,7 @@ class ReactTransitionGroup extends React.Component {
 
   static defaultProps = {
     component: 'span',
-    childFactory: emptyFunction.thatReturnsArgument,
+    childFactory: function (arg) { return arg; },
   };
 
   state = {

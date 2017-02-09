@@ -19,10 +19,11 @@ var flattenChildren = function (children) {
   }
 
   var result = {};
-  React.Children.forEach(children, function (child, name) {
-    var keyUnique = result[name] === undefined;
+  React.Children.forEach(children, function (child) {
+    var key = child.key;
+    var keyUnique = result[key] === undefined;
     if (keyUnique && child != null) {
-      result[name] = child;
+      result[key] = child;
     }
   });
   

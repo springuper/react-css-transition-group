@@ -14,7 +14,7 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
 
-var CSSCore = require('fbjs/lib/CSSCore');
+var CSSCore = require('./CSSCore');
 var ReactTransitionEvents = require('./ReactTransitionEvents');
 
 var TICK = 17;
