@@ -1,6 +1,6 @@
 {
   "name": "standalone-react-css-transition-group",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "standalone ReactCSSTransitionGroup implement",
   "main": "lib/index.js",
   "scripts": {
