@@ -18,8 +18,8 @@
   },
   "homepage": "https://github.com/springuper/react-css-transition-group#readme",
   "peerDependencies": {
-    "fbjs": "^0.8.9",
-    "react": "^15.4.2"
+    "fbjs": "^0.8.5",
+    "react": "^15.3.2"
   },
   "devDependencies": {
     "babel": "^6.5.2",
