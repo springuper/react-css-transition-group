@@ -17,10 +17,11 @@ var PropTypes = require('prop-types');
 
 var CSSCore = require('fbjs/lib/CSSCore');
 var ReactTransitionEvents = require('./ReactTransitionEvents');
+var createReactClass = require('create-react-class');
 
 var TICK = 17;
 
-var ReactCSSTransitionGroupChild = React.createClass({
+var ReactCSSTransitionGroupChild = createReactClass({
   displayName: 'ReactCSSTransitionGroupChild',
 
   propTypes: {
