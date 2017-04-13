@@ -13,6 +13,7 @@
 
 var React = require('react');
 var ReactTransitionChildMapping = require('./ReactTransitionChildMapping');
+var PropTypes = require('prop-types')
 
 /**
  * A basis for animations. When children are declaratively added or removed,
@@ -23,8 +24,8 @@ class ReactTransitionGroup extends React.Component {
   static displayName = 'ReactTransitionGroup';
 
   static propTypes = {
-    component: React.PropTypes.any,
-    childFactory: React.PropTypes.func,
+    component: PropTypes.any,
+    childFactory: PropTypes.func,
   };
 
   static defaultProps = {

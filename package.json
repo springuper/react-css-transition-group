@@ -31,5 +31,9 @@
     "eslint-config-airbnb-base": "^11.1.0",
     "eslint-config-defaults": "^9.0.0",
     "eslint-plugin-import": "^2.2.0"
+  },
+  "dependencies": {
+    "create-react-class": "^15.5.2",
+    "prop-types": "^15.5.7"
   }
 }

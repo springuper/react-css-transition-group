@@ -13,42 +13,44 @@
 
 var React = require('react');
 var ReactDOM = require('react-dom');
+var PropTypes = require('prop-types');
 
 var CSSCore = require('./CSSCore');
 var ReactTransitionEvents = require('./ReactTransitionEvents');
+var createReactClass = require('create-react-class');
 
 var TICK = 17;
 
-var ReactCSSTransitionGroupChild = React.createClass({
+var ReactCSSTransitionGroupChild = createReactClass({
   displayName: 'ReactCSSTransitionGroupChild',
 
   propTypes: {
-    name: React.PropTypes.oneOfType([
-      React.PropTypes.string,
-      React.PropTypes.shape({
-        enter: React.PropTypes.string,
-        leave: React.PropTypes.string,
-        active: React.PropTypes.string,
+    name: PropTypes.oneOfType([
+      PropTypes.string,
+      PropTypes.shape({
+        enter: PropTypes.string,
+        leave: PropTypes.string,
+        active: PropTypes.string,
       }),
-      React.PropTypes.shape({
-        enter: React.PropTypes.string,
-        enterActive: React.PropTypes.string,
-        leave: React.PropTypes.string,
-        leaveActive: React.PropTypes.string,
-        appear: React.PropTypes.string,
-        appearActive: React.PropTypes.string,
+      PropTypes.shape({
+        enter: PropTypes.string,
+        enterActive: PropTypes.string,
+        leave: PropTypes.string,
+        leaveActive: PropTypes.string,
+        appear: PropTypes.string,
+        appearActive: PropTypes.string,
       }),
     ]).isRequired,
 
     // Once we require timeouts to be specified, we can remove the
     // boolean flags (appear etc.) and just accept a number
     // or a bool for the timeout flags (appearTimeout etc.)
-    appear: React.PropTypes.bool,
-    enter: React.PropTypes.bool,
-    leave: React.PropTypes.bool,
-    appearTimeout: React.PropTypes.number,
-    enterTimeout: React.PropTypes.number,
-    leaveTimeout: React.PropTypes.number,
+    appear: PropTypes.bool,
+    enter: PropTypes.bool,
+    leave: PropTypes.bool,
+    appearTimeout: PropTypes.number,
+    enterTimeout: PropTypes.number,
+    leaveTimeout: PropTypes.number,
   },
 
   transition: function(animationType, finishCallback, userSpecifiedDelay) {
