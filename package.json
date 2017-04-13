@@ -1,6 +1,6 @@
 {
   "name": "standalone-react-css-transition-group",
-  "version": "0.1.6",
+  "version": "15.5.0",
   "description": "standalone ReactCSSTransitionGroup implement",
   "main": "lib/index.js",
   "scripts": {
@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/springuper/react-css-transition-group#readme",
   "peerDependencies": {
-    "react": "^15.3.2"
+    "react": "^15.5.0"
   },
   "devDependencies": {
     "babel": "^6.5.2",

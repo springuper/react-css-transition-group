@@ -11,6 +11,7 @@
 
 'use strict';
 
+// eslint-disable-next-line
 var React = require('react');
 var ReactDOM = require('react-dom');
 var PropTypes = require('prop-types');
